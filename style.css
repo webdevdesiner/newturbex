@@ -58,10 +58,8 @@ section.module.parallax{
   overflow: hidden;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  
   background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
