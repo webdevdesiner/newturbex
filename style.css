@@ -1,37 +1,61 @@
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 200vh; /* Para rolar a página */
-      overflow-x: hidden;
-    }
-    .banner-parallax {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 400px;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-      z-index: 0;
-    }
-    .conteudo {
-      position: relative;
-      z-index: 1;
-      background: white;
-      margin-top: 0;
-      padding-top: 0;
-      /* Cria o buraco usando clip-path */
-      clip-path: ellipse(600px 180px at 50% 200px);
-      -webkit-clip-path: ellipse(600px 180px at 50% 200px);
-      min-height: 100vh;
-    }
-    .conteudo-inner {
-      margin-top: 250px;
-      padding: 40px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      background: rgba(255,255,255,0.95);
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    }
+body {
   
+}
+
+.parallax-container {
+  position: relative;
+  height: 200vh; /* Exemplo: altura da rolagem */
+  overflow: hidden;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+ 
+}
+
+.layer-back {
+  background: url('https://portal.loft.com.br/wp-content/uploads/2021/07/belo-horizonte-768x315.jpg') no-repeat center center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(5);
+  width: 100%;
+}
+
+.layer-middle {
+  background: url('./image/batata.png') no-repeat center center;
+  background-size: 75%;
+  transform: translateZ(0px) scale(1);
+ 
+  
+}
+
+.layer-front {
+  background: url('./image/batata.png') no-repeat center center;
+  background-size: 35%;
+  transform: translateZ(1px) scale(0.8);
+  width: 100%;
+  margin-top: 0;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  /* transform: translateZ(1px) scale(1.2); */
+} 
+
+.box {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  z-index: 2;
+}
