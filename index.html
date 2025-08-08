@@ -2,78 +2,25 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing Page Parallax</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
-    .parallax-banner {
-      min-height: 60vh;
-      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-      position: relative;
-    }
-    .banner-content {
-      background: rgba(0,0,0,0.4);
-      padding: 2rem 3rem;
-      border-radius: 10px;
-      text-align: center;
-    }
-    section {
-      padding: 3rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    @media (max-width: 768px) {
-      .parallax-banner {
-        background-attachment: scroll;
-        min-height: 40vh;
-      }
-      .banner-content {
-        padding: 1rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Parallax Banner com Buraco</title>
+ 
 </head>
 <body>
-  <div class="parallax-banner">
-    <div class="banner-content">
-      <h1>Bem-vindo à Landing Page</h1>
-      <p>Banner com efeito Parallax responsivo</p>
+  <div class="banner-parallax"></div>
+  <div class="conteudo">
+    <div class="conteudo-inner">
+      <h1>Conteúdo do Site</h1>
+      <p>
+        O banner do topo está fixo atrás de tudo. O conteúdo do site tem um buraco (ellipse) para mostrar o banner ao fundo, criando um efeito parallax simples.
+      </p>
+      <p>
+        Role a página para ver o efeito!
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi.</p>
     </div>
   </div>
-  <section>
-    <h2>Sobre o Produto</h2>
-    <p>
-      Esta é uma landing page simples com um banner parallax no topo, totalmente responsiva e compatível com dispositivos móveis.
-    </p>
-    <p>
-      Adicione aqui informações sobre seu produto, serviço ou oferta especial.
-    </p>
-  </section>
-  <section>
-    <h2>Contato</h2>
-    <p>
-      Entre em contato conosco para saber mais!
-    </p>
-    <form>
-      <input type="text" placeholder="Seu nome" required style="width:100%;padding:8px;margin-bottom:8px;">
-      <input type="email" placeholder="Seu e-mail" required style="width:100%;padding:8px;margin-bottom:8px;">
-      <textarea placeholder="Sua mensagem" required style="width:100%;padding:8px;margin-bottom:8px;"></textarea>
-      <button type="submit" style="padding:10px 20px;">Enviar</button>
-    </form>
-  </section>
 </body>
 </html>
